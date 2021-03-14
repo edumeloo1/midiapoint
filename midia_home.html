@@ -8,16 +8,79 @@
     <title>Mídia Point - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        .float {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #D89410;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+        .my-float {
+            margin-top: 22px;
+        }
+
+        .color_nav_footer {
+            background-color: #dedede;
+        }
+
+        .nav_bar_orienta {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+        }
+
+        .orienta_footer_left {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 70%;
+        }
+
+        .orienta_footer_right {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        .class_video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .class_servicos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .class_sobre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./imagens/Mídia Point (5).png" alt="..." width="40px" height="40px">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light color_nav_footer">
+                <a class="navbar-brand" href="#" style="margin-left: 80px;">
+                    <img src="./imagens/Mídia Point (4).png" alt="..." width="60px" height="60px">
                     <b>Mídia Point</b>
-                    <p style="font-size: 10px; text-align: center; margin-top: -14px; margin-left: 45px;">Inovando o
+                    <p style="font-size: 10px; text-align: center; margin-top: -20px; margin-left: 55px;">Inovando o
                         Sertão</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,40 +88,105 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" style="margin-top: -15px;" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse nav_bar_orienta" style="margin-top: -10px;" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="midia_home.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre_nos">Sobre Nós</a>
+                            <a class="nav-link" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servicos">Serviços</a>
+                            <a class="nav-link" href="#sobre_nos">Sobre</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <br>
-            <img src="./imagens/Mídia.png" width="1080px" style="align-items: center; justify-content: center;">
+
+        <video class="class_video" controls="none" autoplay="autoplay">
+            <source src="./imagens/Mídia.mp4" type="video/mp4">
+            <object data="" width="320" height="240">
+                <embed width="320" height="240" src="./imagens/Mídia.mp4">
+            </object>
+        </video>
+
         <br>
-        <div id="sobre_nos">
-            <h1>Sobre</h1>
-        </div>
         <br>
+        <hr>
+
         <div id="servicos">
-            <h1>
-                Serviços
-            </h1>
+            <br>
+            <h4 class="text-center"><b>Serviços</b></h4>
+            <br>
+            <div class="row class_servicos">
+                <div class="card" style="width: 18rem; margin-right: 20px;">
+                    <img src="./imagens/web.png" class="card-img-top" alt="...">
+                    <h6 class="text-center mb-4">Sites</h6>
+                </div>
+
+                <div class="card" style="width: 18rem;margin-left: 20px; margin-right: 20px;">
+                    <img src="./imagens/mobile.png" class="card-img-top" alt="...">
+                    <h6 class="text-center mb-4">Aplicativos</h6>
+                </div>
+
+                <div class="card" style="width: 18rem;margin-left: 20px; margin-right: 20px;">
+                    <img src="./imagens/cardápio.png" class="card-img-top" alt="...">
+                    <h6 class="text-center mb-4">Cardápios Digitais</h6>
+                </div>
+            </div>
         </div>
 
+        <br>
+        <br>
+        <hr>
+        <div id="sobre_nos">
+            <br>
+            <h4 class="text-center"><b>Sobre a empresa</b></h4>
+            <br>
+            <div class="row class_sobre">
+                <div class="card" style="width: 18rem; margin-right: 20px;">
+                    <img src="./imagens/mobile.png" class="card-img-top" alt="...">
+                    <hr>
+                    <h6 class="text-center mb-4">Eduardo Melo</h6>
+                </div>
+
+                <div class="card" style="width: 18rem; margin-left: 20px;">
+                    <img src="./imagens/web.png" class="card-img-top" alt="...">
+                    <hr>
+                    <h6 class="text-center mb-4">Matheus Lira</h6>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <footer class="navbar navbar-expand-lg color_nav_footer">
+            <div class="col orienta_footer_left">
+                <p style="margin-top: 13px;">Desenvolvido por <b onclick="myFunction()" style="cursor: pointer;">Mídia
+                        Point</b>.</p>
+            </div>
+            <div class="col orienta_footer_left">
+                <p style="margin-top: 13px;">Todos os Direitos Reservados - 2021</p>
+            </div>
+        </footer>
+
+        <a href="midia_home.html" class="float">
+            <img style="margin-top: 10px;" src="./imagens/upload.png">
+        </a>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <script>
+        function myFunction() {
+            window.open("https://www.instagram.com/midiapointpnz/");
+        }
+    </script>
 </body>
 
 </html>
